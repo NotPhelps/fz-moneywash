@@ -406,12 +406,3 @@ AddEventHandler('QBCore:Client:OnPlayerLoaded', function()
     TriggerEvent('fz-moneywash:setup')
 end)
 
-
-
-onSelect = function()
-    print('^2[DEBUG] Target was clicked! WashId:', washId, 'MachineId:', id)
-    TriggerServerEvent('fz-moneywash:checkWashingMachine', washId, id)
-end,
-RegisterNetEvent('fz-moneywash:checkWashingMachine', function(washId, id)
-    -- code here
-end)
